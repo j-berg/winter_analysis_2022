@@ -1,0 +1,3810 @@
+You are using the current version of XPRESSpipe...
+======================
+User commands summary:
+======================
+XPRESSpipe version: 0.6.3
+cmd: peRNAseq
+input: /scratch/general/lustre/u0690617/4111890/input_files/
+output: /scratch/general/lustre/u0690617/4111890/output_files/
+reference: /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/
+gtf: /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts.gtf
+experiment: winter_rnaseq_xenografts
+suppress_version_check: False
+small_output: False
+two_pass: False
+adapters: ['AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT', 'GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG']
+quality: 28
+min_length: 17
+max_length: 0
+remove_rrna: True
+front_trim: 1
+umi_location: none
+umi_length: 0
+spacer_length: 0
+no_multimappers: False
+deduplicate: False
+output_bed: False
+quantification_method: htseq
+feature_type: exon
+stranded: no
+method: None
+vcf: None
+batch: None
+sjdbOverhang: 149
+mismatchRatio: 0.1
+seedSearchStartLmax: 50
+genome_size: 14
+gene_name: GAPDH
+smoothen: False
+max_processors: 64
+path: /uufs/chpc.utah.edu/common/home/u0690617/miniconda3/envs/xpresspipe2/lib/python3.7/site-packages/xpresspipe/
+log_loc: /scratch/general/lustre/u0690617/4111890/output_files/
+log:  >> /scratch/general/lustre/u0690617/4111890/output_files/winter_rnaseq_xenografts.log 2>&1
+log_file: /scratch/general/lustre/u0690617/4111890/output_files/winter_rnaseq_xenografts.log
+=====================
+End commands summary
+=====================
+
+Read1 before filtering:
+total reads: 14521722
+total bases: 2178258300
+Q20 bases: 2116765814(97.177%)
+Q30 bases: 2023993688(92.918%)
+
+Read2 before filtering:
+total reads: 14521722
+total bases: 2178258300
+Q20 bases: 2089634992(95.9315%)
+Q30 bases: 1962533607(90.0965%)
+
+Read1 after filtering:
+total reads: 13837126
+total bases: 2048742246
+Q20 bases: 2010632451(98.1398%)
+Q30 bases: 1932426907(94.3226%)
+
+Read2 after filtering:
+total reads: 13837126
+total bases: 2048770486
+Q20 bases: 1989473719(97.1057%)
+Q30 bases: 1878871428(91.7073%)
+
+Filtering result:
+reads passed filter: 27674252
+reads failed due to low quality: 1362368
+reads failed due to too many N: 1260
+reads failed due to too short: 5564
+reads with adapter trimmed: 1102172
+bases trimmed due to adapters: 25167653
+
+Duplication rate: 15.0574%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW14_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW14_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW14_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW14_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW14_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW14_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW14_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW14_1fastp.html 
+fastp v0.22.0, time used: 292 seconds
+Read1 before filtering:
+total reads: 19151203
+total bases: 2872680450
+Q20 bases: 2794472624(97.2775%)
+Q30 bases: 2678669507(93.2463%)
+
+Read2 before filtering:
+total reads: 19151203
+total bases: 2872680450
+Q20 bases: 2767543488(96.3401%)
+Q30 bases: 2609597120(90.8419%)
+
+Read1 after filtering:
+total reads: 18307895
+total bases: 2702204805
+Q20 bases: 2654670749(98.2409%)
+Q30 bases: 2556837398(94.6204%)
+
+Read2 after filtering:
+total reads: 18307895
+total bases: 2702201007
+Q20 bases: 2631193196(97.3722%)
+Q30 bases: 2492658308(92.2455%)
+
+Filtering result:
+reads passed filter: 36615790
+reads failed due to low quality: 1680158
+reads failed due to too many N: 2944
+reads failed due to too short: 3514
+reads with adapter trimmed: 1887792
+bases trimmed due to adapters: 50017246
+
+Duplication rate: 17.5577%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW03_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW03_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW03_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW03_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW03_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW03_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW03_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW03_1fastp.html 
+fastp v0.22.0, time used: 344 seconds
+Read1 before filtering:
+total reads: 21599103
+total bases: 3239865450
+Q20 bases: 3170271356(97.8519%)
+Q30 bases: 3051053109(94.1722%)
+
+Read2 before filtering:
+total reads: 21599103
+total bases: 3239865450
+Q20 bases: 3137057985(96.8268%)
+Q30 bases: 2970932557(91.6993%)
+
+Read1 after filtering:
+total reads: 20935040
+total bases: 3103257161
+Q20 bases: 3054643579(98.4335%)
+Q30 bases: 2949618698(95.0491%)
+
+Read2 after filtering:
+total reads: 20935040
+total bases: 3103443839
+Q20 bases: 3029711015(97.6242%)
+Q30 bases: 2880250616(92.8082%)
+
+Filtering result:
+reads passed filter: 41870080
+reads failed due to low quality: 1323606
+reads failed due to too many N: 3260
+reads failed due to too short: 1260
+reads with adapter trimmed: 1383394
+bases trimmed due to adapters: 30559178
+
+Duplication rate: 26.387%
+
+Insert size peak (evaluated by paired-end reads): 262
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW12_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW12_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW12_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW12_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW12_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW12_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW12_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW12_1fastp.html 
+fastp v0.22.0, time used: 416 seconds
+Read1 before filtering:
+total reads: 21876685
+total bases: 3281502750
+Q20 bases: 3210105984(97.8243%)
+Q30 bases: 3088179497(94.1087%)
+
+Read2 before filtering:
+total reads: 21876685
+total bases: 3281502750
+Q20 bases: 3176221948(96.7917%)
+Q30 bases: 3009185723(91.7015%)
+
+Read1 after filtering:
+total reads: 21190145
+total bases: 3140209979
+Q20 bases: 3090829392(98.4275%)
+Q30 bases: 2983431143(95.0074%)
+
+Read2 after filtering:
+total reads: 21190145
+total bases: 3140397956
+Q20 bases: 3066020036(97.6316%)
+Q30 bases: 2916243692(92.8622%)
+
+Filtering result:
+reads passed filter: 42380290
+reads failed due to low quality: 1367898
+reads failed due to too many N: 3246
+reads failed due to too short: 1936
+reads with adapter trimmed: 1482370
+bases trimmed due to adapters: 32347145
+
+Duplication rate: 21.1655%
+
+Insert size peak (evaluated by paired-end reads): 243
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW07_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW07_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW07_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW07_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW07_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW07_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW07_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW07_1fastp.html 
+fastp v0.22.0, time used: 427 seconds
+Read1 before filtering:
+total reads: 16811973
+total bases: 2521795950
+Q20 bases: 2451053838(97.1948%)
+Q30 bases: 2342454949(92.8884%)
+
+Read2 before filtering:
+total reads: 16811973
+total bases: 2521795950
+Q20 bases: 2421682453(96.0301%)
+Q30 bases: 2274933582(90.2109%)
+
+Read1 after filtering:
+total reads: 16053255
+total bases: 2380973590
+Q20 bases: 2335619246(98.0951%)
+Q30 bases: 2243043702(94.207%)
+
+Read2 after filtering:
+total reads: 16053255
+total bases: 2381074042
+Q20 bases: 2312500793(97.1201%)
+Q30 bases: 2183721330(91.7116%)
+
+Filtering result:
+reads passed filter: 32106510
+reads failed due to low quality: 1513832
+reads failed due to too many N: 1498
+reads failed due to too short: 2106
+reads with adapter trimmed: 921227
+bases trimmed due to adapters: 21008192
+
+Duplication rate: 15.4585%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW09_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW09_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW09_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW09_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW09_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW09_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW09_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW09_1fastp.html 
+fastp v0.22.0, time used: 428 seconds
+Read1 before filtering:
+total reads: 16356974
+total bases: 2453546100
+Q20 bases: 2383345306(97.1388%)
+Q30 bases: 2282440358(93.0262%)
+
+Read2 before filtering:
+total reads: 16356974
+total bases: 2453546100
+Q20 bases: 2363483729(96.3293%)
+Q30 bases: 2236167783(91.1402%)
+
+Read1 after filtering:
+total reads: 15644309
+total bases: 2275838671
+Q20 bases: 2232574657(98.099%)
+Q30 bases: 2149253777(94.4379%)
+
+Read2 after filtering:
+total reads: 15644309
+total bases: 2276943791
+Q20 bases: 2221520866(97.5659%)
+Q30 bases: 2115389678(92.9048%)
+
+Filtering result:
+reads passed filter: 31288618
+reads failed due to low quality: 1418966
+reads failed due to too many N: 1518
+reads failed due to too short: 4846
+reads with adapter trimmed: 3906182
+bases trimmed due to adapters: 104585970
+
+Duplication rate: 28.4305%
+
+Insert size peak (evaluated by paired-end reads): 228
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW06_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW06_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW06_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW06_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW06_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW06_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW06_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW06_1fastp.html 
+fastp v0.22.0, time used: 442 seconds
+Read1 before filtering:
+total reads: 21627732
+total bases: 3244159800
+Q20 bases: 3149095464(97.0697%)
+Q30 bases: 3009631617(92.7708%)
+
+Read2 before filtering:
+total reads: 21627732
+total bases: 3244159800
+Q20 bases: 3120834311(96.1985%)
+Q30 bases: 2945677574(90.7994%)
+
+Read1 after filtering:
+total reads: 20576757
+total bases: 3040244560
+Q20 bases: 2981552831(98.0695%)
+Q30 bases: 2864207332(94.2098%)
+
+Read2 after filtering:
+total reads: 20576757
+total bases: 3040231749
+Q20 bases: 2961261131(97.4025%)
+Q30 bases: 2810596992(92.4468%)
+
+Filtering result:
+reads passed filter: 41153514
+reads failed due to low quality: 2065092
+reads failed due to too many N: 1968
+reads failed due to too short: 34890
+reads with adapter trimmed: 1970244
+bases trimmed due to adapters: 49389714
+
+Duplication rate: 16.9712%
+
+Insert size peak (evaluated by paired-end reads): 235
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW02_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW02_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW02_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW02_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW02_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW02_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW02_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW02_1fastp.html 
+fastp v0.22.0, time used: 464 seconds
+Read1 before filtering:
+total reads: 25513744
+total bases: 3827061600
+Q20 bases: 3708823574(96.9105%)
+Q30 bases: 3537241189(92.4271%)
+
+Read2 before filtering:
+total reads: 25513744
+total bases: 3827061600
+Q20 bases: 3675634206(96.0432%)
+Q30 bases: 3461620422(90.4511%)
+
+Read1 after filtering:
+total reads: 24247374
+total bases: 3583239662
+Q20 bases: 3509416418(97.9398%)
+Q30 bases: 3364284179(93.8895%)
+
+Read2 after filtering:
+total reads: 24247374
+total bases: 3583474658
+Q20 bases: 3485549605(97.2673%)
+Q30 bases: 3300519269(92.1039%)
+
+Filtering result:
+reads passed filter: 48494748
+reads failed due to low quality: 2522450
+reads failed due to too many N: 3674
+reads failed due to too short: 6616
+reads with adapter trimmed: 2168589
+bases trimmed due to adapters: 57657200
+
+Duplication rate: 17.0061%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW08_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW08_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW08_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW08_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW08_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW08_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW08_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW08_1fastp.html 
+fastp v0.22.0, time used: 476 seconds
+Read1 before filtering:
+total reads: 18302117
+total bases: 2745317550
+Q20 bases: 2676197329(97.4823%)
+Q30 bases: 2563943324(93.3933%)
+
+Read2 before filtering:
+total reads: 18302117
+total bases: 2745317550
+Q20 bases: 2650113546(96.5321%)
+Q30 bases: 2507088657(91.3224%)
+
+Read1 after filtering:
+total reads: 17619899
+total bases: 2594222907
+Q20 bases: 2547548617(98.2008%)
+Q30 bases: 2450963767(94.4778%)
+
+Read2 after filtering:
+total reads: 17619899
+total bases: 2594294196
+Q20 bases: 2530620448(97.5456%)
+Q30 bases: 2405945091(92.7399%)
+
+Filtering result:
+reads passed filter: 35239798
+reads failed due to low quality: 1354794
+reads failed due to too many N: 1718
+reads failed due to too short: 7924
+reads with adapter trimmed: 2525692
+bases trimmed due to adapters: 59431206
+
+Duplication rate: 19.3928%
+
+Insert size peak (evaluated by paired-end reads): 228
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW01_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW01_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW01_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW01_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW01_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW01_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW01_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW01_1fastp.html 
+fastp v0.22.0, time used: 481 seconds
+Read1 before filtering:
+total reads: 24026088
+total bases: 3603913200
+Q20 bases: 3519959938(97.6705%)
+Q30 bases: 3381553034(93.83%)
+
+Read2 before filtering:
+total reads: 24026088
+total bases: 3603913200
+Q20 bases: 3482209283(96.623%)
+Q30 bases: 3291259201(91.3246%)
+
+Read1 after filtering:
+total reads: 23164920
+total bases: 3438362786
+Q20 bases: 3382578219(98.3776%)
+Q30 bases: 3261796731(94.8648%)
+
+Read2 after filtering:
+total reads: 23164920
+total bases: 3438480634
+Q20 bases: 3352683572(97.5048%)
+Q30 bases: 3181749612(92.5336%)
+
+Filtering result:
+reads passed filter: 46329840
+reads failed due to low quality: 1716572
+reads failed due to too many N: 3644
+reads failed due to too short: 2120
+reads with adapter trimmed: 1154498
+bases trimmed due to adapters: 25122681
+
+Duplication rate: 20.6297%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW11_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW11_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW11_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW11_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW11_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW11_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW11_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW11_1fastp.html 
+fastp v0.22.0, time used: 506 seconds
+Read1 before filtering:
+total reads: 25041685
+total bases: 3756252750
+Q20 bases: 3672397278(97.7676%)
+Q30 bases: 3528888046(93.947%)
+
+Read2 before filtering:
+total reads: 25041685
+total bases: 3756252750
+Q20 bases: 3633789546(96.7398%)
+Q30 bases: 3437276889(91.5081%)
+
+Read1 after filtering:
+total reads: 24227962
+total bases: 3593720331
+Q20 bases: 3535993242(98.3937%)
+Q30 bases: 3409263509(94.8672%)
+
+Read2 after filtering:
+total reads: 24227962
+total bases: 3593727162
+Q20 bases: 3505532831(97.5459%)
+Q30 bases: 3328333738(92.6151%)
+
+Filtering result:
+reads passed filter: 48455924
+reads failed due to low quality: 1621146
+reads failed due to too many N: 3824
+reads failed due to too short: 2476
+reads with adapter trimmed: 1495996
+bases trimmed due to adapters: 31343406
+
+Duplication rate: 19.9525%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW18_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW18_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW18_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW18_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW18_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW18_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW18_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW18_1fastp.html 
+fastp v0.22.0, time used: 515 seconds
+Read1 before filtering:
+total reads: 23749640
+total bases: 3562446000
+Q20 bases: 3468791354(97.3711%)
+Q30 bases: 3325181465(93.3398%)
+
+Read2 before filtering:
+total reads: 23749640
+total bases: 3562446000
+Q20 bases: 3426456442(96.1827%)
+Q30 bases: 3222052170(90.4449%)
+
+Read1 after filtering:
+total reads: 22692214
+total bases: 3362626624
+Q20 bases: 3304809700(98.2806%)
+Q30 bases: 3183602650(94.6761%)
+
+Read2 after filtering:
+total reads: 22692214
+total bases: 3363006813
+Q20 bases: 3270057155(97.2361%)
+Q30 bases: 3090496282(91.8968%)
+
+Filtering result:
+reads passed filter: 45384428
+reads failed due to low quality: 2106286
+reads failed due to too many N: 3346
+reads failed due to too short: 5220
+reads with adapter trimmed: 1617722
+bases trimmed due to adapters: 34992635
+
+Duplication rate: 24.6252%
+
+Insert size peak (evaluated by paired-end reads): 262
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW21_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW21_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW21_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW21_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW21_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW21_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW21_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW21_1fastp.html 
+fastp v0.22.0, time used: 518 seconds
+Read1 before filtering:
+total reads: 24850012
+total bases: 3727501800
+Q20 bases: 3643646181(97.7504%)
+Q30 bases: 3500830595(93.919%)
+
+Read2 before filtering:
+total reads: 24850012
+total bases: 3727501800
+Q20 bases: 3597051367(96.5003%)
+Q30 bases: 3390908217(90.97%)
+
+Read1 after filtering:
+total reads: 23990191
+total bases: 3562729075
+Q20 bases: 3505735258(98.4003%)
+Q30 bases: 3380419002(94.8829%)
+
+Read2 after filtering:
+total reads: 23990191
+total bases: 3562755819
+Q20 bases: 3468390843(97.3513%)
+Q30 bases: 3282592294(92.1363%)
+
+Filtering result:
+reads passed filter: 47980382
+reads failed due to low quality: 1714040
+reads failed due to too many N: 3930
+reads failed due to too short: 1672
+reads with adapter trimmed: 1044231
+bases trimmed due to adapters: 22759046
+
+Duplication rate: 21.9376%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW13_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW13_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW13_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW13_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW13_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW13_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW13_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW13_1fastp.html 
+fastp v0.22.0, time used: 527 seconds
+Read1 before filtering:
+total reads: 20261494
+total bases: 3039224100
+Q20 bases: 2974039681(97.8552%)
+Q30 bases: 2862213332(94.1758%)
+
+Read2 before filtering:
+total reads: 20261494
+total bases: 3039224100
+Q20 bases: 2944721502(96.8906%)
+Q30 bases: 2793515317(91.9154%)
+
+Read1 after filtering:
+total reads: 19623199
+total bases: 2912022522
+Q20 bases: 2866915053(98.451%)
+Q30 bases: 2768338473(95.0658%)
+
+Read2 after filtering:
+total reads: 19623199
+total bases: 2912142419
+Q20 bases: 2845369339(97.7071%)
+Q30 bases: 2709587099(93.0445%)
+
+Filtering result:
+reads passed filter: 39246398
+reads failed due to low quality: 1270820
+reads failed due to too many N: 2996
+reads failed due to too short: 2774
+reads with adapter trimmed: 1063297
+bases trimmed due to adapters: 22240170
+
+Duplication rate: 23.1219%
+
+Insert size peak (evaluated by paired-end reads): 258
+
+JSON report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW22_1fastp.json
+HTML report: /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW22_1fastp.html
+
+fastp -f 1 --thread 4 -i /scratch/general/lustre/u0690617/4111890/input_files/JW22_1.fq -I /scratch/general/lustre/u0690617/4111890/input_files/JW22_2.fq -o /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW22_1.fq -O /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW22_2.fq -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT --adapter_sequence_r2 GATCGGAAGAGCACACGTCTGAACTCCAGTCACGGATGACTATCTCGTATGCCGTCTTCTGCTTG -l 17 --length_limit 0 -q 28 -j /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW22_1fastp.json -h /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/JW22_1fastp.html 
+fastp v0.22.0, time used: 230 seconds
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW01_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW01_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW01_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 15:44:51 ..... started STAR run
+Mar 04 15:44:51 ..... loading genome
+Mar 04 15:45:33 ..... processing annotations GTF
+Mar 04 15:45:53 ..... inserting junctions into the genome indices
+Mar 04 15:47:45 ..... started mapping
+Mar 04 15:53:54 ..... finished mapping
+Mar 04 15:53:58 ..... finished successfully
+READ 38110469 WRITTEN 38110469 
+EXCLUDED 5346555 EXAMINED 32763914
+PAIRED 31903412 SINGLE 860502
+DULPICATE PAIR 9876298 DUPLICATE SINGLE 411224
+DUPLICATE TOTAL 10287522
+READ 38110469 WRITTEN 27822947 
+EXCLUDED 5346555 EXAMINED 32763914
+PAIRED 31903412 SINGLE 860502
+DULPICATE PAIR 9876298 DUPLICATE SINGLE 411224
+DUPLICATE TOTAL 10287522
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW02_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW02_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW02_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 16:10:59 ..... started STAR run
+Mar 04 16:10:59 ..... loading genome
+Mar 04 16:11:27 ..... processing annotations GTF
+Mar 04 16:11:47 ..... inserting junctions into the genome indices
+Mar 04 16:13:39 ..... started mapping
+Mar 04 16:20:35 ..... finished mapping
+Mar 04 16:20:40 ..... finished successfully
+READ 44293908 WRITTEN 44293908 
+EXCLUDED 5938672 EXAMINED 38355236
+PAIRED 37660732 SINGLE 694504
+DULPICATE PAIR 10763971 DUPLICATE SINGLE 323145
+DUPLICATE TOTAL 11087116
+READ 44293908 WRITTEN 33206792 
+EXCLUDED 5938672 EXAMINED 38355236
+PAIRED 37660732 SINGLE 694504
+DULPICATE PAIR 10763971 DUPLICATE SINGLE 323145
+DUPLICATE TOTAL 11087116
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW03_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW03_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW03_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 16:40:18 ..... started STAR run
+Mar 04 16:40:18 ..... loading genome
+Mar 04 16:40:45 ..... processing annotations GTF
+Mar 04 16:41:05 ..... inserting junctions into the genome indices
+Mar 04 16:42:54 ..... started mapping
+Mar 04 16:49:04 ..... finished mapping
+Mar 04 16:49:08 ..... finished successfully
+READ 39362572 WRITTEN 39362572 
+EXCLUDED 5484616 EXAMINED 33877956
+PAIRED 33187574 SINGLE 690382
+DULPICATE PAIR 9650453 DUPLICATE SINGLE 294763
+DUPLICATE TOTAL 9945216
+READ 39362572 WRITTEN 29417356 
+EXCLUDED 5484616 EXAMINED 33877956
+PAIRED 33187574 SINGLE 690382
+DULPICATE PAIR 9650453 DUPLICATE SINGLE 294763
+DUPLICATE TOTAL 9945216
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW06_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW06_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW06_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 17:06:57 ..... started STAR run
+Mar 04 17:06:57 ..... loading genome
+Mar 04 17:07:20 ..... processing annotations GTF
+Mar 04 17:07:40 ..... inserting junctions into the genome indices
+Mar 04 17:09:27 ..... started mapping
+Mar 04 17:15:29 ..... finished mapping
+Mar 04 17:15:33 ..... finished successfully
+READ 36169936 WRITTEN 36169936 
+EXCLUDED 7335589 EXAMINED 28834347
+PAIRED 27695536 SINGLE 1138811
+DULPICATE PAIR 12839352 DUPLICATE SINGLE 682753
+DUPLICATE TOTAL 13522105
+READ 36169936 WRITTEN 22647831 
+EXCLUDED 7335589 EXAMINED 28834347
+PAIRED 27695536 SINGLE 1138811
+DULPICATE PAIR 12839352 DUPLICATE SINGLE 682753
+DUPLICATE TOTAL 13522105
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW07_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW07_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW07_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 17:31:38 ..... started STAR run
+Mar 04 17:31:38 ..... loading genome
+Mar 04 17:32:00 ..... processing annotations GTF
+Mar 04 17:32:20 ..... inserting junctions into the genome indices
+Mar 04 17:34:07 ..... started mapping
+Mar 04 17:41:34 ..... finished mapping
+Mar 04 17:41:39 ..... finished successfully
+READ 45059049 WRITTEN 45059049 
+EXCLUDED 6557889 EXAMINED 38501160
+PAIRED 38006729 SINGLE 494431
+DULPICATE PAIR 12693550 DUPLICATE SINGLE 244688
+DUPLICATE TOTAL 12938238
+READ 45059049 WRITTEN 32120811 
+EXCLUDED 6557889 EXAMINED 38501160
+PAIRED 38006729 SINGLE 494431
+DULPICATE PAIR 12693550 DUPLICATE SINGLE 244688
+DUPLICATE TOTAL 12938238
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW08_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW08_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW08_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 18:01:43 ..... started STAR run
+Mar 04 18:01:43 ..... loading genome
+Mar 04 18:02:06 ..... processing annotations GTF
+Mar 04 18:02:26 ..... inserting junctions into the genome indices
+Mar 04 18:04:17 ..... started mapping
+Mar 04 18:11:41 ..... finished mapping
+Mar 04 18:11:46 ..... finished successfully
+READ 52964753 WRITTEN 52964753 
+EXCLUDED 7349430 EXAMINED 45615323
+PAIRED 44753872 SINGLE 861451
+DULPICATE PAIR 13042829 DUPLICATE SINGLE 294512
+DUPLICATE TOTAL 13337341
+READ 52964753 WRITTEN 39627412 
+EXCLUDED 7349430 EXAMINED 45615323
+PAIRED 44753872 SINGLE 861451
+DULPICATE PAIR 13042829 DUPLICATE SINGLE 294512
+DUPLICATE TOTAL 13337341
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW09_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW09_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW09_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 18:35:14 ..... started STAR run
+Mar 04 18:35:14 ..... loading genome
+Mar 04 18:35:43 ..... processing annotations GTF
+Mar 04 18:36:03 ..... inserting junctions into the genome indices
+Mar 04 18:37:55 ..... started mapping
+Mar 04 18:43:35 ..... finished mapping
+Mar 04 18:43:39 ..... finished successfully
+READ 34011153 WRITTEN 34011153 
+EXCLUDED 4191730 EXAMINED 29819423
+PAIRED 29487386 SINGLE 332037
+DULPICATE PAIR 8052088 DUPLICATE SINGLE 144145
+DUPLICATE TOTAL 8196233
+READ 34011153 WRITTEN 25814920 
+EXCLUDED 4191730 EXAMINED 29819423
+PAIRED 29487386 SINGLE 332037
+DULPICATE PAIR 8052088 DUPLICATE SINGLE 144145
+DUPLICATE TOTAL 8196233
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW11_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW11_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW11_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 18:59:23 ..... started STAR run
+Mar 04 18:59:23 ..... loading genome
+Mar 04 18:59:47 ..... processing annotations GTF
+Mar 04 19:00:07 ..... inserting junctions into the genome indices
+Mar 04 19:02:08 ..... started mapping
+Mar 04 19:10:09 ..... finished mapping
+Mar 04 19:10:14 ..... finished successfully
+READ 49083304 WRITTEN 49083304 
+EXCLUDED 6531215 EXAMINED 42552089
+PAIRED 42140051 SINGLE 412038
+DULPICATE PAIR 13979441 DUPLICATE SINGLE 202732
+DUPLICATE TOTAL 14182173
+READ 49083304 WRITTEN 34901131 
+EXCLUDED 6531215 EXAMINED 42552089
+PAIRED 42140051 SINGLE 412038
+DULPICATE PAIR 13979441 DUPLICATE SINGLE 202732
+DUPLICATE TOTAL 14182173
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW12_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW12_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW12_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 19:31:57 ..... started STAR run
+Mar 04 19:31:57 ..... loading genome
+Mar 04 19:32:26 ..... processing annotations GTF
+Mar 04 19:32:46 ..... inserting junctions into the genome indices
+Mar 04 19:34:36 ..... started mapping
+Mar 04 19:42:09 ..... finished mapping
+Mar 04 19:42:13 ..... finished successfully
+READ 44758287 WRITTEN 44758287 
+EXCLUDED 4582553 EXAMINED 40175734
+PAIRED 39730831 SINGLE 444903
+DULPICATE PAIR 15758596 DUPLICATE SINGLE 236062
+DUPLICATE TOTAL 15994658
+READ 44758287 WRITTEN 28763629 
+EXCLUDED 4582553 EXAMINED 40175734
+PAIRED 39730831 SINGLE 444903
+DULPICATE PAIR 15758596 DUPLICATE SINGLE 236062
+DUPLICATE TOTAL 15994658
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW13_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW13_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW13_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 20:01:51 ..... started STAR run
+Mar 04 20:01:51 ..... loading genome
+Mar 04 20:02:19 ..... processing annotations GTF
+Mar 04 20:02:39 ..... inserting junctions into the genome indices
+Mar 04 20:04:30 ..... started mapping
+Mar 04 20:12:19 ..... finished mapping
+Mar 04 20:12:24 ..... finished successfully
+READ 50638623 WRITTEN 50638623 
+EXCLUDED 4748001 EXAMINED 45890622
+PAIRED 45496677 SINGLE 393945
+DULPICATE PAIR 15894602 DUPLICATE SINGLE 191383
+DUPLICATE TOTAL 16085985
+READ 50638623 WRITTEN 34552638 
+EXCLUDED 4748001 EXAMINED 45890622
+PAIRED 45496677 SINGLE 393945
+DULPICATE PAIR 15894602 DUPLICATE SINGLE 191383
+DUPLICATE TOTAL 16085985
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW14_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW14_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW14_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 20:35:05 ..... started STAR run
+Mar 04 20:35:05 ..... loading genome
+Mar 04 20:35:32 ..... processing annotations GTF
+Mar 04 20:35:52 ..... inserting junctions into the genome indices
+Mar 04 20:37:43 ..... started mapping
+Mar 04 20:42:27 ..... finished mapping
+Mar 04 20:42:32 ..... finished successfully
+READ 29513437 WRITTEN 29513437 
+EXCLUDED 3808818 EXAMINED 25704619
+PAIRED 25316231 SINGLE 388388
+DULPICATE PAIR 6587535 DUPLICATE SINGLE 154995
+DUPLICATE TOTAL 6742530
+READ 29513437 WRITTEN 22770907 
+EXCLUDED 3808818 EXAMINED 25704619
+PAIRED 25316231 SINGLE 388388
+DULPICATE PAIR 6587535 DUPLICATE SINGLE 154995
+DUPLICATE TOTAL 6742530
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW18_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW18_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW18_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 20:57:02 ..... started STAR run
+Mar 04 20:57:02 ..... loading genome
+Mar 04 20:57:24 ..... processing annotations GTF
+Mar 04 20:57:45 ..... inserting junctions into the genome indices
+Mar 04 20:59:42 ..... started mapping
+Mar 04 21:08:03 ..... finished mapping
+Mar 04 21:08:08 ..... finished successfully
+READ 51322350 WRITTEN 51322350 
+EXCLUDED 6404671 EXAMINED 44917679
+PAIRED 44379542 SINGLE 538137
+DULPICATE PAIR 14104841 DUPLICATE SINGLE 267490
+DUPLICATE TOTAL 14372331
+READ 51322350 WRITTEN 36950019 
+EXCLUDED 6404671 EXAMINED 44917679
+PAIRED 44379542 SINGLE 538137
+DULPICATE PAIR 14104841 DUPLICATE SINGLE 267490
+DUPLICATE TOTAL 14372331
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW21_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW21_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW21_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 21:30:43 ..... started STAR run
+Mar 04 21:30:43 ..... loading genome
+Mar 04 21:31:12 ..... processing annotations GTF
+Mar 04 21:31:33 ..... inserting junctions into the genome indices
+Mar 04 21:33:22 ..... started mapping
+Mar 04 21:41:47 ..... finished mapping
+Mar 04 21:41:52 ..... finished successfully
+READ 48921149 WRITTEN 48921149 
+EXCLUDED 6757955 EXAMINED 42163194
+PAIRED 41647064 SINGLE 516130
+DULPICATE PAIR 16666343 DUPLICATE SINGLE 286931
+DUPLICATE TOTAL 16953274
+READ 48921149 WRITTEN 31967875 
+EXCLUDED 6757955 EXAMINED 42163194
+PAIRED 41647064 SINGLE 516130
+DULPICATE PAIR 16666343 DUPLICATE SINGLE 286931
+DUPLICATE TOTAL 16953274
+	STAR --runThreadN 30 --genomeDir /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/genome --readFilesIn /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW22_1.fq /scratch/general/lustre/u0690617/4111890/output_files/trimmed_fastq/trimmed_JW22_2.fq --sjdbGTFfile /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts_depl.gtf --outFileNamePrefix /scratch/general/lustre/u0690617/4111890/output_files/alignments_coordinates/JW22_1_ --outFilterMismatchNoverLmax 0.1 --seedSearchStartLmax 50 --sjdbOverhang 149 --outFilterMultimapScoreRange 1 --outFilterMultimapNmax 20 --outFilterMismatchNmax 10 --alignIntronMax 500000 --alignMatesGapMax 1000000 --sjdbScore 2 --alignSJDBoverhangMin 1 --genomeLoad NoSharedMemory --limitBAMsortRAM 0 --readFilesCommand cat --outFilterMatchNminOverLread 0.33 --outFilterScoreMinOverLread 0.33 --outSAMstrandField intronMotif --outSAMattributes NH HI NM MD AS XS --outSAMunmapped Within --outSAMtype BAM Unsorted --quantMode TranscriptomeSAM --outSAMheaderHD @HD VN:1.4
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Mar 04 22:03:42 ..... started STAR run
+Mar 04 22:03:42 ..... loading genome
+Mar 04 22:04:06 ..... processing annotations GTF
+Mar 04 22:04:26 ..... inserting junctions into the genome indices
+Mar 04 22:06:30 ..... started mapping
+Mar 04 22:13:40 ..... finished mapping
+Mar 04 22:13:45 ..... finished successfully
+READ 41705468 WRITTEN 41705468 
+EXCLUDED 4598857 EXAMINED 37106611
+PAIRED 36746813 SINGLE 359798
+DULPICATE PAIR 12847527 DUPLICATE SINGLE 181825
+DUPLICATE TOTAL 13029352
+READ 41705468 WRITTEN 28676116 
+EXCLUDED 4598857 EXAMINED 37106611
+PAIRED 36746813 SINGLE 359798
+DULPICATE PAIR 12847527 DUPLICATE SINGLE 181825
+DUPLICATE TOTAL 13029352
+
+  /// MultiQC 🔍 | v1.11
+
+|           multiqc | MultiQC Version v1.12 now available!
+|           multiqc | Report title: winter_rnaseq_xenografts
+|           multiqc | Search path : /scratch/general/lustre/u0690617/4111890/output_files
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 240/240  |             htseq | Found 14 reports
+|              star | Found 14 reports
+|             fastp | Found 14 reports
+|            fastqc | Found 28 reports
+|           multiqc | Compressing plot data
+|           multiqc | Report      : ../../../../../../../../scratch/general/lustre/u0690617/4111890/output_files/winter_rnaseq_xenografts_multiqc_report.html
+|           multiqc | Data        : ../../../../../../../../scratch/general/lustre/u0690617/4111890/output_files/winter_rnaseq_xenografts_multiqc_report_data
+|           multiqc | MultiQC complete
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "Rsubread package already installed"
+[1] "dupRadar package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "GenomicFeatures package already installed"
+Loading required package: BiocGenerics
+Loading required package: methods
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+[1] "data.table package already installed"
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    shift
+
+The following object is masked from ‘package:IRanges’:
+
+    shift
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, second
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/GAPDH.gtf..."
+Import genomic features from the file as a GRanges object ... OK
+Prepare the 'metadata' data frame ... OK
+Make the TxDb object ... OK
+[1] "Collecting flat reference information..."
+[1] "1 transcript records compiled..."
+Warning message:
+In .get_cds_IDX(type, phase) :
+  The "phase" metadata column contains non-NA values for features of type
+  stop_codon. This information was ignored.
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: methods
+[1] "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: BiocGenerics
+[1] "GenomicAlignments package already installed"
+Loading required package: BiocGenerics
+Loading required package: methods
+Loading required package: methods
+Loading required package: parallel
+Loading required package: methods
+Loading required package: parallel
+[1] "GenomicAlignments package already installed"
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: methods
+Loading required package: parallel
+Loading required package: parallel
+Loading required package: parallel
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+
+Attaching package: ‘BiocGenerics’
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+Loading required package: S4Vectors
+Loading required package: S4Vectors
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+Loading required package: stats4
+Loading required package: stats4
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: stats4
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: stats4
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘S4Vectors’
+
+Loading required package: IRanges
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+Loading required package: IRanges
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘S4Vectors’
+
+Loading required package: IRanges
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomeInfoDb
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: Biobase
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: matrixStats
+Loading required package: matrixStats
+Loading required package: matrixStats
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: matrixStats
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+
+Attaching package: ‘DelayedArray’
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW02_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW03_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW01_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW07_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW06_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW08_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 51896408 BAM records..."
+[1] "Processing 55004726 BAM records..."
+[1] "Processing 60162430 BAM records..."
+[1] "Processing 63472026 BAM records..."
+[1] "Processing 65075136 BAM records..."
+[1] "Processing 71017682 BAM records..."
+[1][1] "data.table package already installed"
+ "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1][1] "GenomicAlignments package already installed"
+ "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: methods
+[1] "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+[1] "GenomicAlignments package already installed"
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: methods
+Loading required package: methods
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: parallel
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: parallel
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: S4Vectors
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+Loading required package: stats4
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+Loading required package: stats4
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+
+Attaching package: ‘BiocGenerics’
+
+Loading required package: S4Vectors
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+Loading required package: S4Vectors
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: stats4
+Loading required package: S4Vectors
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: stats4
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘S4Vectors’
+
+Loading required package: IRanges
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: Biobase
+Loading required package: Biobase
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: matrixStats
+Loading required package: matrixStats
+Loading required package: matrixStats
+Loading required package: matrixStats
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: XVector
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW13_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW11_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW12_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW09_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW14_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW18_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 41459784 BAM records..."
+[1] "Processing 52054672 BAM records..."
+[1] "Processing 70611512 BAM records..."
+[1] "Processing 74671748 BAM records..."
+[1] "Processing 79681902 BAM records..."
+[1] "Processing 80100898 BAM records..."
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘BiocGenerics’
+
+Loading required package: stats4
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW22_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW21_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 74561154 BAM records..."
+[1] "Processing 87163818 BAM records..."
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "GenomicFeatures package already installed"
+Loading required package: BiocGenerics
+Loading required package: methods
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: AnnotationDbi
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+[1] "data.table package already installed"
+
+Attaching package: ‘data.table’
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    shift
+
+The following object is masked from ‘package:IRanges’:
+
+    shift
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, second
+
+[1] "Reading /uufs/chpc.utah.edu/common/home/rutter-group2/j-berg/winter_novogene_2022/index_files/transcripts.gtf..."
+Import genomic features from the file as a GRanges object ... OK
+Prepare the 'metadata' data frame ... OK
+Make the TxDb object ... OK
+[1] "Collecting flat reference information..."
+[1] "244825 transcript records compiled..."
+Warning message:
+In .get_cds_IDX(type, phase) :
+  The "phase" metadata column contains non-NA values for features of type
+  stop_codon. This information was ignored.
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+Error in library(stringi) : there is no package called ‘stringi’
+Execution halted
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: parallel
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: stats4
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+Error in library(stringi) : there is no package called ‘stringi’
+Execution halted
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+Error in library(stringi) : there is no package called ‘stringi’
+Execution halted
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+Loading required package: IRanges
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW08_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW08_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW08_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW08_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW06_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW06_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW06_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW06_1_Aligned.toTranscriptome.out.bam"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+[1] "data.table package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW07_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW07_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW07_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW07_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 51896408 BAM records ( 100 percent of total reads )..."
+[1] "Processing 65075136 BAM records ( 100 percent of total reads )..."
+[1] "Processing 71017682 BAM records ( 100 percent of total reads )..."
+[1] "Metagene profile for JW08_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW08_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW06_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW06_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW07_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW07_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...[1] "GenomicAlignments package already installed"
+Loading required package: methods
+[1] "GenomicAlignments package already installed"
+Loading required package: BiocGenerics
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+Loading required package: methods
+Loading required package: parallel
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+Loading required package: parallel
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+[1] "data.table package already installed"
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: stats4
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+[1] "GenomicAlignments package already installed"
+Loading required package: S4Vectors
+Loading required package: methods
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: matrixStats
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW14_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW14_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW14_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW14_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW09_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW09_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW09_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW09_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW13_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW13_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW13_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW13_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW12_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW12_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW12_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW12_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW11_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Processing records for JW11_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW11_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW11_1_Aligned.toTranscriptome.out.bam"
+[1] "Rscript processing file list: JW18_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW18_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW18_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW18_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 41459784 BAM records ( 100 percent of total reads )..."
+[1] "Processing 52054672 BAM records ( 100 percent of total reads )..."
+[1] "Processing 70611512 BAM records ( 100 percent of total reads )..."
+[1] "Processing 74671748 BAM records ( 100 percent of total reads )..."
+[1] "Processing 79681902 BAM records ( 100 percent of total reads )..."
+[1] "Processing 80100898 BAM records ( 100 percent of total reads )..."
+[1] "Metagene profile for JW14_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW14_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW09_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW09_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW13_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW13_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW12_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW12_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW11_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW11_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW18_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW18_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+Updating HTML index of packages in '.Library'
+Making 'packages.html' ...Updating HTML index of packages in '.Library'
+Making 'packages.html' ... done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+ done
+Warning message:
+In install.packages("stringi", repos = "http://cran.us.r-project.org",  :
+  installation of package ‘stringi’ had non-zero exit status
+[1] "data.table package already installed"
+[1] "data.table package already installed"
+[1] "GenomicAlignments package already installed"
+[1] "GenomicAlignments package already installed"
+Loading required package: methods
+Loading required package: methods
+Loading required package: BiocGenerics
+Loading required package: BiocGenerics
+Loading required package: parallel
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colMeans,
+    colnames, colSums, dirname, do.call, duplicated, eval, evalq,
+    Filter, Find, get, grep, grepl, intersect, is.unsorted, lapply,
+    lengths, Map, mapply, match, mget, order, paste, pmax, pmax.int,
+    pmin, pmin.int, Position, rank, rbind, Reduce, rowMeans, rownames,
+    rowSums, sapply, setdiff, sort, table, tapply, union, unique,
+    unsplit, which, which.max, which.min
+
+Loading required package: S4Vectors
+Loading required package: S4Vectors
+Loading required package: stats4
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomeInfoDb
+Loading required package: GenomicRanges
+Loading required package: GenomicRanges
+Loading required package: SummarizedExperiment
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: DelayedArray
+Loading required package: matrixStats
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+Loading required package: BiocParallel
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply
+
+Loading required package: Biostrings
+Loading required package: XVector
+Loading required package: Biostrings
+Loading required package: XVector
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘Biostrings’
+
+The following object is masked from ‘package:DelayedArray’:
+
+    type
+
+The following object is masked from ‘package:base’:
+
+    strsplit
+
+Loading required package: Rsamtools
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW22_1_Aligned.toTranscriptome.out.bam"
+
+Attaching package: ‘GenomicAlignments’
+
+The following object is masked from ‘package:data.table’:
+
+    last
+
+[1] "Rscript processing file list: JW21_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW22_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW22_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW22_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing records for JW21_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading records for JW21_1_Aligned.toTranscriptome.out.bam"
+[1] "Reading /scratch/general/lustre/u0690617/4111890/output_files/alignments_transcriptome/JW21_1_Aligned.toTranscriptome.out.bam"
+[1] "Processing 74561154 BAM records ( 100 percent of total reads )..."
+[1] "Processing 87163818 BAM records ( 100 percent of total reads )..."
+[1] "Metagene profile for JW22_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW22_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
+[1] "Metagene profile for JW21_1_Aligned.toTranscriptome.out.bam written to /scratch/general/lustre/u0690617/4111890/output_files/metagene/metrics/JW21_1_Aligned.metaposit"
+[1] "Metagene BAM file processing complete."
